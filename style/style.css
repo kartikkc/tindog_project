@@ -10,7 +10,7 @@ body {
 
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -37,6 +37,7 @@ h3 {
 p {
     color: #8f8f8f;
 }
+
 .navbar {
     padding: 0 0 4.5rem !important;
 }
@@ -67,14 +68,16 @@ p {
 /* Title img */
 
 .iphone-img {
-    width: 60%;
     rotate: 25deg;
-    margin: 0 8rem 0;
+    position: absolute;
+    right: 20%;
 }
 
 /* Features section */
 #features {
-    padding: 7% 5%;
+    background-color: #ffff;
+    position: relative;
+    padding: 3% 5%;
 }
 
 .feature-box {
@@ -146,4 +149,53 @@ p {
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+
+/* Media Query */
+
+@media (max-width:1220px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .iphone-img {
+        width: 60%;
+        position: static;
+        rotate: 0deg;
+    }
+}
+@media (max-width:990px){
+    .testimonials-image {
+        width: 20%;
+    }
+    .press-img {
+        width: 20%;
+    }
+
+}
+
+@media (max-width:375px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .testimonials-h2{
+        font-size: 2rem;
+    }
+    .iphone-img{
+        width: 70%;
+    }
+    .testimonials-image {
+        width: 30%;
+    }
+    .press-img {
+        width: 50%;
+    }
 }
